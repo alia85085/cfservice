@@ -1,0 +1,10 @@
+applications:
+- name: myfirstapp
+  memory: 756M
+  instances: 1
+  services:
+        - service-registry
+        - config-server
+  path: target/cloudfoundary-1.0-SNAPSHOT.jar
+  env:
+    SPRING_PROFILES_ACTIVE: dev
